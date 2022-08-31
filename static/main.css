@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 229, 229);
+}
+header{
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+    margin: 30px 10px;
+    border-radius: 10px;
+}
+.sub-head{
+    background-color: rgb(248, 242, 242); 
+}
+h1{
+    color: rgb(8, 14, 8);
+    text-align: center;
+    color: rgb(56, 18, 92);
+}
+nav{
+    /*background-image: url(./img/purple_sky.jpg);*/
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(37, 17, 17);
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover{
+    background-color: rgb(176, 140, 184);
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px white;
+    border-radius: 25px;
+}
+.items{
+    background-image: url(./img/dasy.jpg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+    margin: 30px 10px;
+    border-radius: 10px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 25px;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(172, 46, 221);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 50px 100px 30px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 30px;
+    align-items: center;
+}
+.image a{
+    padding: 10px;    
+}
+.image img{
+    width: 30px;
+    height: 30px;
+}
+.image img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px white, 0 0 15px white;
+}
+.copy{
+    text-align: center;
+}
+/*About*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 475px;
+    height: 300px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    margin: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 60%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 55%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width:70px;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10px white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

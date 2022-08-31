@@ -1,0 +1,89 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+        {% if title %}
+            <title>Snacks site - {{ title }}</title>
+        {% else %}
+            <title>Snacks site</title>
+        {% endif %}
+    <body>
+        <main>
+            <section class="items">
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/pizza1.jpg')}}" alt="">
+                    <h4>Pizza</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/sharwarma1.jpg')}}" alt="">
+                    <h4>Sharwarma</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/chicken_burger.jpeg')}}" alt="">
+                    <h4>Chicken burger</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/beaf_burger.jpg')}}" alt="">
+                    <h4>Beaf Burger</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/meat_pie1.jpg')}}" alt="">
+                    <h4>Meat pie</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/cake1.jpeg')}}" alt="">
+                    <h4>Cake</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/potato_chips.jpg')}}" alt="">
+                    <h4>Potato chips</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/biscuits.jpg')}}" alt="">
+                    <h4>Biscuits</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/pop_corn.jpg')}}" alt="">
+                    <h4>Pop corn</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/fish_roll.jpg')}}" alt="">
+                    <h4>Fish roll</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/Puff_puff1.jpeg')}}" alt="">
+                    <h4>Puff puff</h4>
+                    <button>Order</button>
+                </div>
+                <div class="item">
+                    <img src="{{url_for('static', filename = '/img/sliced_bread.jpg')}}" alt="">
+                    <h4>Sliced bread</h4>
+                    <button>Order</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <p>Connect with us</p>
+                <div class="image">
+                    <a href="https://web.facebook.com/"><img src="{{url_for('static', filename = '/img/fb_icon.png')}}"></a>
+                    <a href="https://twitter.com/"><img src="{{url_for('static', filename = '/img/tw_icon.png')}}"></a>
+                    <a href="https://www.instagram.com/"></a><img src="{{url_for('static', filename = '/img/in_icon.jpg')}}"></a>
+                </div>
+            </div>
+            <div class="copy">
+                &copy; Copyright 2022 Assignment. All rights reserved
+            </div>
+        </footer>
+    </body>
+{% endblock %}

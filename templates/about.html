@@ -1,0 +1,54 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+        {% if title %}
+            <title>Snacks site - {{ title }}</title>
+        {% else %}
+            <title>Snacks site</title>
+        {% endif %}
+    <body>
+        <section id="about">
+            <h1 class="headings">ABOUT US</h1>
+            <div id="pic">
+                <img src="{{url_for('static', filename = '/img/snack_pic.jpeg')}}" alt="">
+                
+        
+                <div id="intro">
+                    <h2></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, 
+                        similique asperiores distinctio accusantium cumque saepe iusto vel 
+                        numquam maiores eaque dignissimos at sunt cupiditate illum quisquam 
+                        culpa modi, dolore quasi veritatis delectus ipsum architecto inventore. 
+                        Vero, minus! Accusamus in dignissimos blanditiis amet omnis a facilis 
+                        quod hic error? Quia illo possimus magni in cumque laborum atque nam 
+                        voluptates esse inventore. Optio quod porro laboriosam fugit nulla 
+                        blanditiis, perferendis earum voluptatem vel eos provident delectus eum 
+                        exercitationem! Impedit facilis, rerum reprehenderit aliquid a dolorem fugit 
+                        cumque vero veniam optio non error rem, dolorum enim esse alias nihil laboriosam 
+                        voluptas sint. Unde dolores ex repellat harum voluptatum omnis deserunt 
+                        enim doloremque nam atque, vitae veritatis ab incidunt doloribus consequatur 
+                        asperiores aspernatur aperiam nemo sed non reiciendis cum magni laboriosam. 
+                        Reprehenderit maxime quia neque est architecto, ratione et fuga recusandae aut v
+                        ero quae voluptas consequuntur similique aspernatur vel, cumque quidem. Ipsa quo, 
+                        placeat officiis quaerat animi nostrum velit, voluptate dolores consequatur e
+                        xercitationem ut dolorem repellendus blanditiis vel quas adipisci. Quisquam 
+                        ullam ab fuga harum, fugit, maiores iusto deleniti placeat iste labore magni</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="social">
+                <p>Connect with us</p>
+                <div class="image">
+                    <a href="https://web.facebook.com/"><img src="{{url_for('static', filename = '/img/fb_icon.png')}}"></a>
+                    <a href="https://twitter.com/"><img src="{{url_for('static', filename = '/img/tw_icon.png')}}"></a>
+                    <a href="https://www.instagram.com/"></a><img src="{{url_for('static', filename = '/img/in_icon.jpg')}}"></a>
+                </div>
+            </div>
+            <div class="copy">
+                &copy; Copyright 2022 Assignment. All rights reserved
+            </div>
+        </footer>
+    </body>
+{% endblock %}
